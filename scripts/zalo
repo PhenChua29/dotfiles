@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+nativefier --name zalo \
+--platform linux --arch x64 \
+--width 1024 --height 768 \
+--tray --disable-dev-tools \
+--single-instance "https://chat.zalo.me"

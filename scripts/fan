@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+mode=$(sudo cat /sys/devices/platform/asus-nb-wmi/throttle_thermal_policy) 
+
+case "$mode" in
+   "0") echo "Balanced" 
+      ;;
+   "1") echo "Performance"
+      ;;
+   "2") echo "Silent"
+      ;;
+   *) echo "Undefined value: $mode"
+     ;;
+esac

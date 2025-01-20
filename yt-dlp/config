@@ -1,0 +1,20 @@
+# Upgrade the package before running
+-U
+
+# Get the maximum quality
+-f bestvideo*+bestaudio/best
+
+# Use browser's cookies
+# --cookies-from-browser firefox 
+
+# Download the playlist, if the URL refers to a video and a playlist
+--yes-playlist
+
+# Use aira2 for faster download speed
+--downloader aria2c --downloader-args '-c -j 3 -x 3 -s 3 -k 1M'
+
+# Do not overwrite files
+--no-overwrites
+
+# Output dir
+-o "out/%(title)s_%(width)sx%(height)s.%(ext)s"

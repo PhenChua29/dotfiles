@@ -1,0 +1,29 @@
+[connection]
+id=FU-Students 5G
+uuid=e1f94d19-72ce-45d2-8a2d-449423ee0346
+type=wifi
+permissions=user:phenchua:;
+
+[wifi]
+mode=infrastructure
+ssid=FU-Students 5G
+
+[wifi-security]
+key-mgmt=wpa-eap
+
+[802-1x]
+eap=peap;
+identity=LongNPCE170669
+password=ENX%4457
+phase2-auth=mschapv2
+phase1-auth-flags=32
+ca_cert="/home/phenchua/cert/certificate.pem"
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]

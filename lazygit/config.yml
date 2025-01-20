@@ -1,0 +1,4 @@
+gui:
+  theme:
+    selectedLineBgColor: # Foreground color of the selected line
+      - "#2E4A54"

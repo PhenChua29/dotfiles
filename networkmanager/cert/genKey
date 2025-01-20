@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "Generating private key and certificate"
+openssl pkcs12 -in $1 -nocerts -nodes -out private_key.pem -passin pass:
+openssl pkcs12 -in $1 -clcerts -nokeys -out certificate.pem -passin pass:
+echo "Done"

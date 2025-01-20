@@ -1,0 +1,53 @@
+[colors.primary]
+background = "#000000"
+foreground = "#abb2bf"
+bright_foreground = "#e2be7d"
+
+[colors.normal]
+black = "#000000"
+red = "#ef596f"
+green = "#89ca78"
+yellow = "#e5c07b"
+blue = "#61afef"
+magenta = "#d55fde"
+cyan = "#2bbac5"
+white = "#abb2bf"
+
+[colors.bright]
+black = "#434852"
+red = "#ef596f"
+green = "#89ca78"
+yellow = "#e5c07b"
+blue = "#61afef"
+magenta = "#d55fde"
+cyan = "#2bbac5"
+white = "#ffffff"
+
+[colors.dim]
+black = "#000000"
+red = "#9a353d"
+green = "#43554d"
+yellow = "#948b60"
+blue = "#41483d"
+magenta = "#6f2e2d"
+cyan = "#3f534f"
+white = "#7f848e"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
