@@ -3,7 +3,8 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=10000
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash zswap.enabled=1"
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash zswap.enabled=1"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed

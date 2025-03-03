@@ -29,18 +29,23 @@ alias tmux="TERM=xterm-256color tmux"
 # Makes tty font bigger
 alias fontbig="setfont iso01-12x22"
 
-# vim -> nvim
-alias vim=nvim
+# vim -> neovide
+alias vim=neovide
 
 # ===== PATHS =====
 
 # Android sdk paths for emulator 
-set_path "/opt/android-sdk/cmdline-tools/latest/bin"
-set_path "/opt/android-sdk/emulator"
+set_path "/home/phenchua/Android/Sdk/platform-tools"
+set_path "/home/phenchua/Android/Sdk/emulator"
+export ANDROID_HOME="/home/phenchua/Android/Sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
 
 # dotnet-sdk tools
 set_path "~/.dotnet/tools"
 # set_path "/root/.dotnet/tools"
+
+# scrcpy
+set_path "/home/phenchua/Downloads/scrcpy/scrcpy-linux-x86_64-v3.1"
 
 # Make neovim the default editor
 export EDITOR="nvim"
@@ -62,3 +67,10 @@ PATH=~/.console-ninja/.bin:$PATH
 # Env for expo debugger to open browser
 export EDGE_PATH="google-chrome-stable"
 export PATH=$PATH:$HOME/.maestro/bin
+
+# Language
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Created by `pipx` on 2025-03-03 04:38:04
+export PATH="$PATH:/home/phenchua/.local/bin"

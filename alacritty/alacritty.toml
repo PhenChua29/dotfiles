@@ -51,3 +51,9 @@ style = "Italic"
 [font.normal]
 family = "Hack Nerd Font Mono"
 style = "Regular"
+
+[window]
+dynamic_title = true
+dynamic_padding = true
+opacity = 0.85
+dimensions = { columns = 120 , lines = 30 }
