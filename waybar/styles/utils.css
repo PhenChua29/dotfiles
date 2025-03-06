@@ -1,0 +1,14 @@
+#custom-border-left,
+#custom-border-right {
+  color: black;
+  font-size: 36px;
+  margin-top: -33px;
+}
+
+#custom-border-left {
+  margin-right: -16px;
+}
+
+#custom-border-right {
+  margin-left: -16px;
+}

@@ -1,0 +1,13 @@
+{
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "{profile}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "?",
+      "performance": "≡",
+      "balanced": "=",
+      "power-saver": "-"
+    }
+  }
+}

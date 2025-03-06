@@ -1,11 +1,27 @@
 {
   "modules-left": [
-    "cpu"
+    "custom/border-left",
+    "cpu",
+    "custom/border-right"
   ],
   "modules-center": [
-    "battery"
+    "custom/border-left",
+    "hyprland/workspaces",
+    "custom/border-right"
   ],
   "modules-right": [
-    "power-profiles-daemon"
-  ]
+    "custom/border-left",
+    "battery",
+    "power-profiles-daemon",
+    "network",
+    "custom/border-right"
+  ],
+  "include": [
+    "~/dotfiles/waybar/modules/utils.json",
+    "~/dotfiles/waybar/modules/cpu.json",
+    "~/dotfiles/waybar/modules/workspaces.json",
+    "~/dotfiles/waybar/modules/battery.json",
+    "~/dotfiles/waybar/modules/power-profiles-daemon.json",
+    "~/dotfiles/waybar/modules/network.json"
+  ],
 }

@@ -1,0 +1,67 @@
+@define-color green #89ca78;
+@define-color yellow #e5c07b;
+@define-color blue #61afef;
+@define-color red #ef596f;
+
+#cpu,
+#battery,
+#workspaces,
+#network,
+#power-profiles-daemon {
+  font-size: 18px;
+  background-color: black;
+  padding: 4px 12px;
+}
+
+/* both */
+#cpu,
+#workspaces {
+  border-radius: 0px 0px 12px 12px;
+}
+
+/* left */
+#battery {
+  border-radius: 0px 0px 0px 14px;
+  padding: 4px 8px 4px 12px;
+}
+
+/* right */
+#network {
+  color: @green;
+  border-radius: 0px 0px 12px 0px;
+  padding: 4px 16px 4px 0px;
+}
+
+#cpu {
+  color: @green;
+  min-width: 72px;
+}
+
+#workspaces button {
+  border-radius: 9999px;
+}
+
+#workspaces button:not(.empty) {
+  color: gray;
+}
+
+#workspaces button.active {
+  color: @green;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.warning {
+  color: @yellow;
+}
+
+#battery.low {
+  color: @red;
+}
+
+#power-profiles-daemon {
+  color: @green;
+  min-width: 12px;
+}

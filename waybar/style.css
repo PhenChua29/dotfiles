@@ -1,0 +1,22 @@
+@import './styles/default.css';
+@import './styles/utils.css';
+
+window#waybar {
+  background-color: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  color: white;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.modules-left {
+  margin-left: 12px;
+}
+
+.modules-right {
+  margin-right: 12px;
+}

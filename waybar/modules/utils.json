@@ -1,0 +1,10 @@
+{
+  "custom/border-left": {
+    "format": "✦",
+    "interval": "once"
+  }, 
+  "custom/border-right": {
+    "format": "✦",
+    "interval": "once"
+  } 
+}

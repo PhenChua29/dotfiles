@@ -1,0 +1,9 @@
+{
+  "hyprland/workspaces": {
+    "format": "",
+    "format-window-separator": "\n",
+    "persistent-workspaces": {
+      "*": 6
+    }
+  }
+}

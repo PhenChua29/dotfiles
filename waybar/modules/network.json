@@ -1,0 +1,7 @@
+{
+  "network": {
+    "format": "{icon}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)"
+  }
+}

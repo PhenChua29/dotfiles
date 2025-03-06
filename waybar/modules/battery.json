@@ -1,0 +1,11 @@
+{
+  "battery": {
+    "format": "{icon}",
+    "states": {
+      "warning": 30,
+      "low": 20
+    },
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{capacity}%"
+  }
+}
