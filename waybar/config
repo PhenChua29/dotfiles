@@ -5,9 +5,7 @@
     "custom/border-right"
   ],
   "modules-center": [
-    "custom/border-left",
-    "hyprland/workspaces",
-    "custom/border-right"
+    "hyprland/workspaces"
   ],
   "modules-right": [
     "custom/border-left",

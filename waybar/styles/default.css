@@ -37,6 +37,10 @@
   min-width: 72px;
 }
 
+#workspaces {
+  background-color:transparent;
+}
+
 #workspaces button {
   border-radius: 9999px;
 }
