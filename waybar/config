@@ -1,0 +1,11 @@
+{
+  "modules-left": [
+    "cpu"
+  ],
+  "modules-center": [
+    "battery"
+  ],
+  "modules-right": [
+    "power-profiles-daemon"
+  ]
+}
