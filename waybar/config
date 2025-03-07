@@ -12,11 +12,14 @@
     "battery",
     "power-profiles-daemon",
     "network",
+    "custom/separator",
+    "tray",
     "custom/border-right"
   ],
   "include": [
     "~/dotfiles/waybar/modules/utils.json",
     "~/dotfiles/waybar/modules/cpu.json",
+    "~/dotfiles/waybar/modules/tray.json",
     "~/dotfiles/waybar/modules/workspaces.json",
     "~/dotfiles/waybar/modules/battery.json",
     "~/dotfiles/waybar/modules/power-profiles-daemon.json",

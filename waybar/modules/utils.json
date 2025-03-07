@@ -6,5 +6,9 @@
   "custom/border-right": {
     "format": "✦",
     "interval": "once"
+  }, 
+  "custom/separator": {
+    "format": " ",
+    "interval": "once"
   } 
 }

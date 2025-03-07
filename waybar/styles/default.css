@@ -4,6 +4,7 @@
 @define-color red #ef596f;
 
 #cpu,
+#tray,
 #battery,
 #workspaces,
 #network,
@@ -25,8 +26,13 @@
   padding: 4px 8px 4px 12px;
 }
 
-/* right */
 #network {
+  color: @green;
+  padding: 0px 14px 0px 0px;
+}
+
+/* right */
+#tray {
   color: @green;
   border-radius: 0px 0px 12px 0px;
   padding: 4px 16px 4px 0px;
@@ -68,4 +74,10 @@
 #power-profiles-daemon {
   color: @green;
   min-width: 12px;
+}
+
+#tray menu {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
 }

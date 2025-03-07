@@ -12,3 +12,9 @@
 #custom-border-right {
   margin-left: -16px;
 }
+
+#custom-separator {
+  border-right: 1px solid @green;
+  margin-right: 12px;
+  opacity: 0.4;
+}
