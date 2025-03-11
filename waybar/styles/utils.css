@@ -14,7 +14,7 @@
 }
 
 #custom-separator {
-  border-right: 1px solid @green;
-  margin-right: 12px;
-  opacity: 0.4;
+  background-color: black;
+  color: @green;
+  padding-right: 8px;
 }

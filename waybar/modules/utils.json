@@ -8,7 +8,7 @@
     "interval": "once"
   }, 
   "custom/separator": {
-    "format": " ",
+    "format": "|",
     "interval": "once"
   } 
 }

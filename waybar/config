@@ -4,9 +4,6 @@
     "cpu",
     "custom/border-right"
   ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
   "modules-right": [
     "custom/border-left",
     "battery",
