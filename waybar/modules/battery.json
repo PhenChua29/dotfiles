@@ -6,6 +6,6 @@
       "low": 20
     },
     "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{capacity}%"
+    "tooltip-format": "{capacity}%\n{timeTo}"
   }
 }
