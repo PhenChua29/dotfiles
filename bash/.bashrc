@@ -30,7 +30,8 @@ alias tmux="TERM=xterm-256color tmux"
 alias fontbig="setfont iso01-12x22"
 
 # vim -> neovide
-alias vim=neovide
+alias vim=nvim
+alias v=nvim
 
 # ===== PATHS =====
 
@@ -74,3 +75,8 @@ export LC_ALL=en_US.UTF-8
 
 # Created by `pipx` on 2025-03-03 04:38:04
 export PATH="$PATH:/home/phenchua/.local/bin"
+
+# ===== fcitx5 =====
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
