@@ -43,6 +43,7 @@ export ANDROID_SDK_ROOT="$ANDROID_HOME"
 
 # dotnet-sdk tools
 set_path "~/.dotnet/tools"
+set_path "~//home/phenchua/.dotnet/tools"
 # set_path "/root/.dotnet/tools"
 
 # scrcpy
