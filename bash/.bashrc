@@ -15,11 +15,10 @@ set_path() {
   local var_value="$1"
 
   case ":$PATH:" in
-    *":$var_value:"*) ;;
-    *) export PATH="$var_value:$PATH" ;;
+  *":$var_value:"*) ;;
+  *) export PATH="$var_value:$PATH" ;;
   esac
 }
-
 
 # ===== ALIASES =====
 
@@ -35,7 +34,7 @@ alias v=nvim
 
 # ===== PATHS =====
 
-# Android sdk paths for emulator 
+# Android sdk paths for emulator
 set_path "/home/phenchua/Android/Sdk/platform-tools"
 set_path "/home/phenchua/Android/Sdk/emulator"
 export ANDROID_HOME="/home/phenchua/Android/Sdk"
@@ -56,8 +55,8 @@ export GIT_EDITOR="nvim"
 # pnpm
 export PNPM_HOME="/home/phenchua/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
@@ -86,3 +85,8 @@ export GTK_IM_MODULE=fcitx
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
+
+# Wsl config
+if grep -qi microsoft /proc/version; then
+  . ~/dotfiles/bash/wsl
+fi
