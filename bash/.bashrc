@@ -39,6 +39,7 @@ set_path "/home/phenchua/Android/Sdk/platform-tools"
 set_path "/home/phenchua/Android/Sdk/emulator"
 export ANDROID_HOME="/home/phenchua/Android/Sdk"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/26.1.10909125"
 
 # dotnet-sdk tools
 set_path "~/.dotnet/tools"
@@ -90,3 +91,9 @@ eval "$(pyenv init - bash)"
 if grep -qi microsoft /proc/version; then
   . ~/dotfiles/bash/wsl
 fi
+# Mason
+set_path "/home/phenchua/.local/share/nvim/mason/bin"
+
+# Mssql
+set_path "/opt/mssql/bin"
+set_path "/opt/mssql-tools/bin/"
