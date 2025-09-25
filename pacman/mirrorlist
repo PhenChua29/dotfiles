@@ -58,7 +58,3 @@ Server = https://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch
 Server = https://archlinux.c3sl.ufpr.br/$repo/os/$arch
 Server = https://mirror.twds.com.tw/archlinux/$repo/os/$arch
 Server = https://mirrors.neusoft.edu.cn/archlinux/$repo/os/$arch
-
-# g14 db servers
-Server = https://arch.asus-linux.org # Germany, origin
-Server = https://arch.asus-linux.org # Original server
