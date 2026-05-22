@@ -2,7 +2,9 @@
 id=FU-Students 5G
 uuid=e1f94d19-72ce-45d2-8a2d-449423ee0346
 type=wifi
-permissions=user:phenchua:;
+# Leave empty for all users, or restrict to one local Linux user.
+# Example: permissions=user:alice:;
+permissions=
 
 [wifi]
 mode=infrastructure
@@ -17,7 +19,8 @@ identity=LongNPCE170669
 password=ENX%4457
 phase2-auth=mschapv2
 phase1-auth-flags=32
-ca_cert="/home/phenchua/cert/certificate.pem"
+# Optional: set this if your PEAP network requires a CA certificate.
+# Example: ca_cert="/home/alice/cert/certificate.pem"
 
 [ipv4]
 method=auto

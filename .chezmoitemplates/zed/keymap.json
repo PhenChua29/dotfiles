@@ -1,0 +1,145 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "ctrl-;": "terminal_panel::Toggle",
+      "ctrl-p": "workspace::ToggleZoom",
+    },
+  },
+  {
+    "context": "GitDiff",
+    "bindings": {
+      "ctrl-j": "editor::OpenExcerpts",
+    },
+  },
+  {
+    "context": "VimControl || EmptyPane",
+    "bindings": {
+      // Panes
+      "space g": "git_panel::Toggle",
+      "space e": "project_panel::Toggle",
+      "space a": "agent::Toggle",
+
+      // Navigate & Search
+      "space t": "project_symbols::Toggle",
+      "space f": "file_finder::Toggle",
+      "space s": "pane::DeploySearch",
+
+      // Edit
+      "space l": "editor::Format",
+      "space /": "editor::ToggleComments",
+
+      // Stage
+      "space c": "git::ToggleStaged",
+      "space r": "git::Restore",
+
+      // Stash
+      "g s s": "git::StashAll",
+      "g s v": "git::ViewStash",
+
+      // Blame
+      "space b c": "editor::OpenGitBlameCommit",
+      "space b h": "editor::BlameHover",
+      "space b v": "git::Blame",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePreviousItem",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space /": "editor::ToggleComments",
+    },
+  },
+  {
+    "context": "(vim_mode == normal && !Dock) || GitPanel || ProjectPanel || ProjectSearchBar || Terminal || KeyContextView",
+    "bindings": {
+      "shift-Up": "workspace::IncreaseActiveDockSize",
+      "shift-Down": "workspace::DecreaseActiveDockSize",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-l": "workspace::ActivatePaneRight",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space e": "project_panel::Toggle",
+    },
+  },
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "ctrl-o": "pane::GoBack",
+    },
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "space g": "git_panel::Toggle",
+      "ctrl-j": "git_panel::FocusEditor",
+      "ctrl-k": "git_panel::FocusChanges",
+    },
+  },
+  {
+    "context": "GitPanel && !CommitEditor",
+    "bindings": {
+      "t": "git_panel::ToggleTreeView",
+      "h": "git::FileHistory",
+      "p": "git::Pull",
+      "P": "git::Push",
+      "f": "git::Fetch",
+      "b": "git::CheckoutBranch",
+      "s": "git::ViewStash",
+      "c": "git_graph::Open",
+    },
+  },
+  // Unbinds
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-l": "editor::SelectLine",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-h": "buffer_search::DeployReplace",
+    },
+  },
+  {
+    "context": "BufferSearchBar",
+    "unbind": {
+      "ctrl-h": "search::ToggleReplace",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-t": "project_symbols::Toggle",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-p": "menu::SelectPrevious",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-shift-i": "file_finder::ToggleFilterMenu",
+    },
+  },
+]

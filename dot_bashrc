@@ -35,26 +35,25 @@ alias v=nvim
 # ===== PATHS =====
 
 # Android sdk paths for emulator
-set_path "/home/phenchua/Android/Sdk/platform-tools"
-set_path "/home/phenchua/Android/Sdk/emulator"
-export ANDROID_HOME="/home/phenchua/Android/Sdk"
+set_path "$HOME/Android/Sdk/platform-tools"
+set_path "$HOME/Android/Sdk/emulator"
+export ANDROID_HOME="$HOME/Android/Sdk"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/26.1.10909125"
 
 # dotnet-sdk tools
-set_path "~/.dotnet/tools"
-set_path "~//home/phenchua/.dotnet/tools"
+set_path "$HOME/.dotnet/tools"
 # set_path "/root/.dotnet/tools"
 
 # scrcpy
-set_path "/home/phenchua/Downloads/scrcpy/scrcpy-linux-x86_64-v3.1"
+set_path "$HOME/Downloads/scrcpy/scrcpy-linux-x86_64-v3.1"
 
 # Make neovim the default editor
 export EDITOR="nvim"
 export GIT_EDITOR="nvim"
 
 # pnpm
-export PNPM_HOME="/home/phenchua/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
 *":$PNPM_HOME:"*) ;;
 *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -75,7 +74,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Created by `pipx` on 2025-03-03 04:38:04
-export PATH="$PATH:/home/phenchua/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # ===== fcitx5 =====
 export XMODIFIERS=@im=fcitx
@@ -89,10 +88,10 @@ eval "$(pyenv init - bash)"
 
 # Wsl config
 if grep -qi microsoft /proc/version; then
-  . ~/dotfiles/bash/wsl
+  . "$HOME/.config/bash/wsl"
 fi
 # Mason
-set_path "/home/phenchua/.local/share/nvim/mason/bin"
+set_path "$HOME/.local/share/nvim/mason/bin"
 
 # Mssql
 set_path "/opt/mssql/bin"

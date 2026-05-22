@@ -1,0 +1,25 @@
+{
+  "modules-left": [
+    "custom/border-left",
+    "cpu",
+    "custom/border-right"
+  ],
+  "modules-right": [
+    "custom/border-left",
+    "battery",
+    "power-profiles-daemon",
+    "network",
+    "custom/separator",
+    "tray",
+    "custom/border-right"
+  ],
+  "include": [
+    "~/.config/waybar/modules/utils.json",
+    "~/.config/waybar/modules/cpu.json",
+    "~/.config/waybar/modules/tray.json",
+    "~/.config/waybar/modules/workspaces.json",
+    "~/.config/waybar/modules/battery.json",
+    "~/.config/waybar/modules/power-profiles-daemon.json",
+    "~/.config/waybar/modules/network.json"
+  ],
+}

@@ -1,0 +1,13 @@
+{{ if ne .chezmoi.os "windows" }}
+AppData
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" }}
+.config
+.local
+.bashrc
+.tmux.conf
+{{ end }}
+
+utils
+dotfiles
