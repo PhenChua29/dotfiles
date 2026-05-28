@@ -1,8 +1,1 @@
-{{- if eq .chezmoi.os "linux" }}
-[".config/nvim"]
-type = "archive"
-url = "https://github.com/phenchua29/nvim-configs/archive/refs/heads/master.tar.gz"
-exact = true
-stripComponents = 1
-refreshPeriod = "168h"
-{{- end }}
+# No external sources — nvim config is now managed as direct files in dot_config/nvim
