@@ -9,8 +9,6 @@ end
 mason.setup({
 	registries = {
 		"github:mason-org/mason-registry",
-		"github:mason-org/mason-registry",
-		"github:Crashdummyy/mason-registry",
 	},
 })
 
@@ -24,11 +22,13 @@ end
 
 masonInstaller.setup({
 	ensure_installed = {
+		-- formatter
 		"stylua",
 		"prettier",
 		"clang-format",
 		"shfmt",
-    "black",
+		"taplo",
+		"black",
 
 		-- lsp
 		"typescript-language-server",
@@ -39,12 +39,15 @@ masonInstaller.setup({
 		"ansible-language-server",
 		"eslint-lsp",
 		"basedpyright", -- Python
-    "terraform-ls",
-    "gopls",
+		"groovy-language-server",
+		"terraform-ls",
+		"gopls",
+		"rust-analyzer",
 
-    --linter,
-    "golangci-lint",
-    "ruff",
+		-- linter
+		"golangci-lint",
+		"ruff",
+		"shellcheck",
 	},
 })
 
