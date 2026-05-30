@@ -9,5 +9,9 @@ AppData
 .tmux.conf
 {{ end }}
 
+{{ if eq .chezmoi.os "windows" }}
+.gemini
+{{ end }}
+
 utils
 dotfiles
