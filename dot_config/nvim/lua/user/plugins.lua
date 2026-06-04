@@ -112,7 +112,12 @@ local plugins = {
 	{ "JoosepAlviste/nvim-ts-context-commentstring", event = "BufEnter" },
 
 	-- Treesitter
-	{ "nvim-treesitter/nvim-treesitter", event = "BufEnter" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		branch = "main",
+		lazy = false,
+		build = ":TSUpdate",
+	},
 
 	-- Highlighter
 	{ "catgoose/nvim-colorizer.lua", event = "BufReadPre" },
