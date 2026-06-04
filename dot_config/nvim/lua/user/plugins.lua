@@ -175,12 +175,12 @@ local plugins = {
 	-- AI
 	-- { "github/copilot.vim", event = "BufEnter" },
 	-- {
-		-- "CopilotC-Nvim/CopilotChat.nvim",
-		-- dependencies = {
-			-- { "github/copilot.vim" },
-			-- { "nvim-lua/plenary.nvim", branch = "master" },
-		-- },
-		-- build = "make tiktoken", -- Only on MacOS or Linux
+	-- "CopilotC-Nvim/CopilotChat.nvim",
+	-- dependencies = {
+	-- { "github/copilot.vim" },
+	-- { "nvim-lua/plenary.nvim", branch = "master" },
+	-- },
+	-- build = "make tiktoken", -- Only on MacOS or Linux
 	-- },
 
 	-- Sessions manager
@@ -202,8 +202,8 @@ local plugins = {
 	-- Dianosis
 	{ "folke/trouble.nvim" },
 
-  -- Linters
-  { "mfussenegger/nvim-lint" }
+	-- Linters
+	{ "mfussenegger/nvim-lint" },
 }
 
 -- Some custom icons for Lazy.nvim interfaces
