@@ -65,7 +65,20 @@ local maps = {
 
 	-- trouble
 
-	{ "n", "<leader>y", "<cmd>Trouble diagnostics toggle focus=false<cr>", opts },
+	{
+		"n",
+		"<leader>y",
+		function()
+			vim.diagnostic.open_float({
+				scope = "cursor",
+				focus = false,
+				border = "rounded",
+				source = "if_many",
+			})
+		end,
+		opts,
+	},
+	{ "n", "<leader>Y", "<cmd>Trouble diagnostics toggle focus=true<cr>", opts },
 
 	-- AI
 
