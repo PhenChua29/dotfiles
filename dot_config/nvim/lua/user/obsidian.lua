@@ -8,7 +8,7 @@ end
 
 obsidian.setup({
 	notes_subdir = "Notes",
-  new_notes_location = "notes_subdir",
+	new_notes_location = "notes_subdir",
 
 	workspaces = {
 		{
@@ -18,7 +18,7 @@ obsidian.setup({
 	},
 
 	attachments = {
-		img_folder = "Files",
+		folder = "Files",
 	},
 	daily_notes = {
 		folder = "Journey/Daily",
@@ -28,6 +28,11 @@ obsidian.setup({
 	},
 
 	ui = { enable = false },
+	legacy_commands = false,
+
+	frontmatter = {
+		enabled = false,
+	},
 
 	---@param title string|?
 	---@return string
