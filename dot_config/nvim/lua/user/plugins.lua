@@ -60,6 +60,8 @@ local plugins = {
 	{
 		"GustavEikaas/easy-dotnet.nvim",
 		dependencies = { "nvim-lua/plenary.nvim", "folke/snacks.nvim" },
+		lazy = true,
+		ft = "cs",
 		config = function()
 			require("easy-dotnet").setup()
 		end,
