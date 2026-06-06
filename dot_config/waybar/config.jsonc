@@ -1,4 +1,5 @@
 {
+  "start_hidden": true,
   "modules-left": [
     "custom/border-left",
     "cpu",
@@ -21,5 +22,5 @@
     "~/.config/waybar/modules/battery.json",
     "~/.config/waybar/modules/power-profiles-daemon.json",
     "~/.config/waybar/modules/network.json"
-  ],
+  ]
 }
