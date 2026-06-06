@@ -43,6 +43,8 @@ masonInstaller.setup({
 		"terraform-ls",
 		"gopls",
 		"rust-analyzer",
+		"helm-ls",
+		"yaml-language-server",
 
 		-- linter
 		"golangci-lint",
