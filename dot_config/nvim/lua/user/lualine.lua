@@ -6,6 +6,9 @@ if not ok then
   return
 end
 
+local theme = require("lualine.themes.auto")
+theme.normal.c.bg = 'None'
+
 local sections = {
   lualine_a = {},
   lualine_b = {"filename"},
@@ -17,4 +20,5 @@ local sections = {
 
 lualine.setup({
   sections = sections,
+  options = { theme = theme },
 })
