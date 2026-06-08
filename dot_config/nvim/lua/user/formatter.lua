@@ -23,7 +23,10 @@ formatter.setup({
 		java = require("formatter.filetypes.java").clangformat,
 		sh = require("formatter.filetypes.sh").shfmt,
     terraform = require("formatter.filetypes.terraform").terraformfmt,
-    python = require("formatter.filetypes.python").black,
+    python = {
+      require("formatter.filetypes.python").ruff,
+      require("formatter.filetypes.python").iruff,
+    },
     rust = require("formatter.filetypes.rust").rustfmt,
 	},
 })
