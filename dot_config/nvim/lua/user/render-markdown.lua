@@ -16,6 +16,9 @@ rm.setup({
 			},
 		},
 	},
+	bullet = {
+		icons = { "•" },
+	},
 })
 
 -- Color patches
