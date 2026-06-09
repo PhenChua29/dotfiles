@@ -1,120 +1,119 @@
 local options = {
-  -- =========== NAVIGATION =========== 
-  
-  -- Enable smart indentation so that the new line is automatically indented, not just 
-  -- copied indentation from the previous line
-  smartindent = true,
+	-- =========== NAVIGATION ===========
 
-  -- =========== LINTING =========== 
-  
-  -- Change auto indent space length
-  shiftwidth = 2,
+	-- Enable smart indentation so that the new line is automatically indented, not just
+	-- copied indentation from the previous line
+	smartindent = true,
 
-  -- Use space instead of tab character
-  expandtab = true,
+	-- =========== LINTING ===========
 
-  -- Change number of space that a tab character shows (for displaying files with tabs obviously)
-  tabstop = 2,  
- 
-  -- =========== APPEARANCE =========== 
-  
-  -- Ensure that there are always n lines above/below the cursor when scrolling up/down 
-  scrolloff = 6,
+	-- Change auto indent space length
+	shiftwidth = 2,
 
-  -- Ensure that there are always n chracters to the left/right of the cursor when scrolling left/right
-  sidescrolloff = 10,
+	-- Use space instead of tab character
+	expandtab = true,
 
-  -- Turn off line wrap
-  wrap = false,
-  
-  -- Hightlight current cursor position with a line
-  cursorline = true,
-  
-  -- Always show the sign column so that text doesn't move when the sign column appears
-  signcolumn = "yes",
+	-- Change number of space that a tab character shows (for displaying files with tabs obviously)
+	tabstop = 2,
 
-  -- Enable true color for better colorscheme support 
-  termguicolors = true,
+	-- =========== APPEARANCE ===========
 
-  -- Line number
-  number = true,
+	-- Ensure that there are always n lines above/below the cursor when scrolling up/down
+	scrolloff = 6,
 
-  -- I don't have to calculate the number of line I need to jump anymore 🙂
-  relativenumber = true,
+	-- Ensure that there are always n chracters to the left/right of the cursor when scrolling left/right
+	sidescrolloff = 10,
 
-  -- Hide the tab line that shows file path on the top left  
-  showtabline = 0,
+	-- Turn off line wrap
+	wrap = false,
 
-  -- Making the suggestion menu in command mode a little taller
-  pumheight = 20,
-  
-  -- Turn off the mode text. E.g. -- INSERT --
-  showmode = false,
+	-- Hightlight current cursor position with a line
+	cursorline = true,
 
-  -- New window position will always be below on the current one when doing :split
-  splitbelow = true,
+	-- Always show the sign column so that text doesn't move when the sign column appears
+	signcolumn = "yes",
 
-  -- New window position will always be on the right of the current buffer when doing :vsplit
-  splitright = true,
+	-- Enable true color for better colorscheme support
+	termguicolors = true,
 
-  -- Make the :split window's content stay at one place when I move the border between them using cursor
-  splitkeep = "screen",
+	-- Line number
+	number = true,
 
-  -- Enable custom Obsidian ui
-  conceallevel = 1, 
-  
-  -- Makes splits windows have a nice divider 
-  laststatus = 3,
+	-- I don't have to calculate the number of line I need to jump anymore 🙂
+	relativenumber = true,
 
-  -- Hide cmd at the bottom unless it is used
-  cmdheight = 0,
-   
-  -- =========== COPYING =========== 
+	-- Hide the tab line that shows file path on the top left
+	showtabline = 0,
 
-  -- Use the same clipboard as system clipboard
-  clipboard = "unnamedplus",
+	-- Making the suggestion menu in command mode a little taller
+	pumheight = 20,
 
-  -- =========== FILE FORMAT =========== 
+	-- Turn off the mode text. E.g. -- INSERT --
+	showmode = false,
 
-  -- Ensure UTF-8 encoding
-  fileencoding = "utf-8", 
-  
-  -- =========== INTERNAL BEHAVIORS =========== 
-  
-  -- Allowing undo even after closing the buffer and re-open it 
-  undofile = true,
+	-- New window position will always be below on the current one when doing :split
+	splitbelow = true,
 
-  -- Keep stuff on RAM only
-  swapfile = false, 
+	-- New window position will always be on the right of the current buffer when doing :vsplit
+	splitright = true,
 
-  -- =========== SEARCHING =========== 
-  
-  -- Turn on highlight
-  hlsearch = true,
+	-- Make the :split window's content stay at one place when I move the border between them using cursor
+	splitkeep = "screen",
 
-  -- For comfortably searching without needing to touch the Shift key
-  ignorecase = true,
+	-- Enable custom Obsidian ui
+	conceallevel = 1,
 
-  -- Turn on case-sensitive search when I type upper case characters
-  smartcase = true,
+	-- Makes splits windows have a nice divider
+	laststatus = 3,
 
-  
-  -- =========== WISHLIST =========== 
-  -- Auto save
+	-- Hide cmd at the bottom unless it is used
+	cmdheight = 0,
+
+	-- =========== COPYING ===========
+
+	-- Use the same clipboard as system clipboard
+	clipboard = "unnamedplus",
+
+	-- =========== FILE FORMAT ===========
+
+	-- Ensure UTF-8 encoding
+	fileencoding = "utf-8",
+
+	-- =========== INTERNAL BEHAVIORS ===========
+
+	-- Allowing undo even after closing the buffer and re-open it
+	undofile = true,
+
+	-- Keep stuff on RAM only
+	swapfile = false,
+
+	-- =========== SEARCHING ===========
+
+	-- Turn on highlight
+	hlsearch = true,
+
+	-- For comfortably searching without needing to touch the Shift key
+	ignorecase = true,
+
+	-- Turn on case-sensitive search when I type upper case characters
+	smartcase = true,
+
+	-- =========== WISHLIST ===========
+	-- Auto save
 }
 
 -- Enabling the configs
 for k, v in pairs(options) do
-  vim.opt[k] = v
+	vim.opt[k] = v
 end
- 
--- =========== NETRW =========== 
-local netrw_options = {
-  -- Let netrw always refresh directory listing so that the keybind <C-l> won't be needed anymore
-  netrw_fastbrowse = 0,
 
-  -- Remove netrw banner at the top
-  netrw_banner = 0, 
+-- =========== NETRW ===========
+local netrw_options = {
+	-- Let netrw always refresh directory listing so that the keybind <C-l> won't be needed anymore
+	netrw_fastbrowse = 0,
+
+	-- Remove netrw banner at the top
+	netrw_banner = 0,
 }
 
 for k, v in pairs(netrw_options) do

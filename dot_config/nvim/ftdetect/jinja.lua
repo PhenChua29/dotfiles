@@ -1,5 +1,5 @@
 vim.filetype.add({
-  pattern = {
-    [".*%.ya?ml%.j2"] = "yaml.jinja",
-  },
+	pattern = {
+		[".*%.ya?ml%.j2"] = "yaml.jinja",
+	},
 })

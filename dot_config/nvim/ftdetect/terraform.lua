@@ -1,5 +1,5 @@
 vim.filetype.add({
-  extension = {
-    tf = "terraform"
-  }
+	extension = {
+		tf = "terraform",
+	},
 })
