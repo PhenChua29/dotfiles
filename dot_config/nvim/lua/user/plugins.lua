@@ -34,9 +34,9 @@ end
 local plugins = {
 
 	-- Themes
-	{ "daschw/leaf.nvim", lazy = true },
-	{ "loctvl842/monokai-pro.nvim", lazy = true },
-	{ "olimorris/onedarkpro.nvim", lazy = true },
+	{ "daschw/leaf.nvim", lazy = true, priority = 1000 },
+	{ "loctvl842/monokai-pro.nvim", lazy = true, priority = 1000 },
+	{ "olimorris/onedarkpro.nvim", lazy = true, priority = 1000 },
 
 	-- Code completion
 	{
