@@ -8,4 +8,12 @@ end
 
 rm.setup({
 	completions = { lsp = { enabled = true } },
+	render_modes = { 'n', 'c', 't', 'i', 'v', 'V', '\22', 's', 'S' },
+	document = {
+		conceal = {
+			char_patterns = {
+				" %^[-_%w]+%f[\n]",
+			},
+		},
+	},
 })
