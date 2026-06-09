@@ -31,7 +31,7 @@ local imports = {
 	"obsidian",
   "render-markdown",
 	"lualine",
-	"bufferline",
+	-- "bufferline",
 	"indent-blankline",
 	"oil",
 	-- "copilot",
