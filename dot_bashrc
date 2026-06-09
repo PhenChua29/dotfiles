@@ -79,7 +79,6 @@ export PATH="$PATH:$HOME/.local/bin"
 # ===== fcitx5 =====
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
-export GTK_IM_MODULE=fcitx
 
 # Python version manager
 export PYENV_ROOT="$HOME/.pyenv"
