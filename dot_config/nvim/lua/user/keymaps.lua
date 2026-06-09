@@ -9,9 +9,6 @@ local maps = {
 	-- let space key do nothing
 	{ "", "<Space>", "<Nop>", opts },
 
-	-- Open explorer
-	{ "n", "<leader>e", ":Oil<CR>", opts },
-
 	-- Resize windows
 	{ "n", "<Up>", ":sil resize -2<CR>", opts },
 	{ "n", "<Down>", ":sil resize +2<CR>", opts },
@@ -34,18 +31,7 @@ local maps = {
 	{ "v", "<", "<gv", opts },
 	{ "v", ">", ">gv", opts },
 
-	-- Search
-	{ "n", "<leader>f", ":sil FzfLua files<CR>", opts },
-	{ "n", "<leader>s", ":sil FzfLua live_grep<CR>", opts },
-	{ "n", "<leader>u", ":sil FzfLua grep_cword<CR>", opts },
-	{ "n", "<leader>p", ":sil Telescope commands<CR>", opts },
-
-	-- Git
-	{ "n", "<leader>g", ":sil LazyGit<CR>", opts },
-
 	-- Terminal
-	{ "n", "<leader>t", ":sil ToggleTerm direction=float<CR>", opts },
-	{ "t", "<leader>t", "<cmd>ToggleTermToggleAll<CR>", opts },
 	{ "t", "<C-\\>", "<C-\\><C-n>", opts },
 
 	-- Appearance
@@ -56,15 +42,7 @@ local maps = {
 	{ "n", "gd", ":sil lua vim.lsp.buf.definition()<CR>", opts },
 	{ "n", "gh", ":sil lua vim.lsp.buf.hover()<CR>", opts },
 
-	-- Obsidian
-	{ "n", "<leader>op", "<cmd>ObsidianPasteImg<cr>", opts },
-
-	-- auto-session
-	{ "n", "<leader>wr", "<cmd>AutoSession search<CR>", { noremap = true, silent = true, desc = "Session search" } },
-	{ "n", "<leader>ws", "<cmd>AutoSession save<CR>", { noremap = true, silent = true, desc = "Save session" } },
-
 	-- trouble
-
 	{
 		"n",
 		"<leader>y",
@@ -78,17 +56,7 @@ local maps = {
 		end,
 		opts,
 	},
-	{ "n", "<leader>Y", "<cmd>Trouble diagnostics toggle focus=true<cr>", opts },
-
-	-- AI
-
-	{ "n", "<leader>c", "<cmd>CopilotChat<cr>", opts },
-
 	-- =========== Editting ===========
-
-	-- Commenting
-	{ "n", "<leader>/", ":normal gcc<CR>", opts },
-	{ "v", "<leader>/", ":normal gcc<CR>", opts },
 
 	-- Formating
 	{ "n", "<leader>l", ":sil Format<cr>", opts },
