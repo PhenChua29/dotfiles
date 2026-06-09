@@ -1,7 +1,6 @@
 vim.filetype.add({
 	pattern = {
-		[".*/templates/.*%.yaml"] = "helm",
-		[".*/templates/.*%.yml"] = "helm",
+		[".*/templates/.*%.ya?ml"] = "helm",
 		[".*/templates/.*%.tpl"] = "helm",
 
 		[".*/values%.yaml"] = "yaml.helm-values",

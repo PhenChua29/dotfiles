@@ -81,19 +81,6 @@ vim.lsp.config("cssls", {
 	},
 })
 
--- Ansible file detection
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-	pattern = { "*.yml", "*.yaml" },
-	callback = function()
-		local first_line = vim.api.nvim_buf_get_lines(0, 0, 1, false)
-
-		if first_line[1] ~= nil and first_line[1] == "---" then
-			vim.bo[0].filetype = "yaml.ansible"
-		end
-	end,
-	desc = "Automatically detect ansible files",
-})
-
 vim.lsp.config("basedpyright", {
 	settings = {
 		basedpyright = {
