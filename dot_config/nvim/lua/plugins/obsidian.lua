@@ -3,10 +3,6 @@ return {
 		"obsidian-nvim/obsidian.nvim",
 		version = "*",
 		ft = "markdown",
-		cmd = "ObsidianPasteImg",
-		keys = {
-			{ "<leader>op", "<cmd>ObsidianPasteImg<CR>", desc = "Paste image into Obsidian note" },
-		},
 		opts = {
 			notes_subdir = "Notes",
 			new_notes_location = "notes_subdir",
