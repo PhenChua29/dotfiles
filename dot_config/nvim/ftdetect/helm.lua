@@ -1,4 +1,7 @@
 vim.filetype.add({
+	extension = {
+		gotmpl = "gotmpl",
+	},
 	pattern = {
 		[".*/templates/.*%.ya?ml"] = "helm",
 		[".*/templates/.*%.tpl"] = "helm",
