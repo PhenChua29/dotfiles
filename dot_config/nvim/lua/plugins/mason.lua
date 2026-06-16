@@ -33,6 +33,7 @@ return {
 					"groovy-language-server",
 					"terraform-ls",
 					"gopls",
+					"lua-language-server",
 					"rust-analyzer",
 					"helm-ls",
 					"yaml-language-server",
