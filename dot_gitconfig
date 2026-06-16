@@ -1,0 +1,16 @@
+[user]
+	name = Phen Chua
+	email = 89496400+PhenChua29@users.noreply.github.com
+	signingkey = /home/phenchua/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
