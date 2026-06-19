@@ -25,6 +25,9 @@ return {
 						require("formatter.filetypes.python").iruff,
 					},
 					rust = require("formatter.filetypes.rust").rustfmt,
+					go = require("formatter.filetypes.go").gofmt,
+					toml = require("formatter.filetypes.toml").taplo,
+					yaml = require("formatter.filetypes.yaml").prettier,
 				},
 			}
 		end,
