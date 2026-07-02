@@ -24,8 +24,8 @@ local options = {
 	-- Ensure that there are always n chracters to the left/right of the cursor when scrolling left/right
 	sidescrolloff = 10,
 
-	-- Turn off line wrap
-	wrap = false,
+	-- Allow line wrap
+	wrap = true,
 
 	-- Hightlight current cursor position with a line
 	cursorline = true,
