@@ -11,7 +11,10 @@ return {
 					javascript = require("formatter.filetypes.javascript").prettier,
 					javascriptreact = require("formatter.filetypes.javascriptreact").prettier,
 					typescript = require("formatter.filetypes.typescript").prettier,
-					typescriptreact = require("formatter.filetypes.typescriptreact").prettier,
+					typescriptreact = {
+						require("formatter.filetypes.typescriptreact").prettier,
+						require("formatter.filetypes.typescriptreact").eslint_d,
+					},
 					json = require("formatter.filetypes.json").prettier,
 					markdown = require("formatter.filetypes.markdown").prettier,
 					cs = require("formatter.filetypes.cs").clangformat,

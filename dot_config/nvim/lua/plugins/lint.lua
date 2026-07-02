@@ -14,6 +14,7 @@ return {
 			lint.linters_by_ft = {
 				python = { "ruff" },
 				javascript = { "prettier", "eslint" },
+				typescriptreact = { "eslint" },
 				go = { "golangcilint" },
 				sh = { "shellcheck" },
 			}

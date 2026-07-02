@@ -18,6 +18,7 @@ return {
 				ensure_installed = {
 					"stylua",
 					"prettier",
+					"eslint_d",
 					"clang-format",
 					"shfmt",
 					"taplo",
