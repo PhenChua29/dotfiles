@@ -32,6 +32,15 @@ alias fontbig="setfont iso01-12x22"
 alias vim=nvim
 alias v=nvim
 
+# Terraform
+alias t=terraform
+
+# Chezmoi
+alias c=chezmoi
+
+# Copy
+alias copy=wl-copy
+
 # ===== PATHS =====
 
 # Android sdk paths for emulator
