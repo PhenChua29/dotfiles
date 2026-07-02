@@ -104,3 +104,6 @@ set_path "$HOME/.local/share/nvim/mason/bin"
 # Mssql
 set_path "/opt/mssql/bin"
 set_path "/opt/mssql-tools/bin/"
+
+# Direnv
+eval "$(direnv hook bash)"
